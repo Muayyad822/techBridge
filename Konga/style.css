@@ -1,0 +1,47 @@
+body{
+    font-family: Helvetica, sans-serif;
+    margin: 0px;
+}
+.strip > a img{
+    height: 82px;
+    width: 100%;
+}
+.service-list{
+    display: flex;
+    gap: 45px;
+    justify-content: center;
+    margin-top: 5px;
+   
+}
+.service-list > a img{
+    width: 105px;
+}
+.header1{
+    background-color: #ed017f;
+}
+.header1 img{
+    width: 120px;
+    padding: 10px 70px;
+}
+.header2{
+    background-color: #7e0345;
+    height: 30px;
+    text-align: center;
+    padding: 5px;
+}
+.header2 a{
+    color: white;
+    font-size: 13px;
+    font-weight: 400;
+    text-decoration: none;
+    margin: 20px;
+   
+}
+.header2 a:hover{
+    color: black;
+    background-color: white;
+    height: 100%;
+}
+#all{
+    font-weight:900;
+}

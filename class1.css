@@ -1,8 +1,9 @@
 .flex-container{
-    background-color: blue;
+    /* background: linear-gradient(90deg, rgb(234, 179, 154), rgb(180, 210, 145), rgb(200, 100, 170)); */
+    background: radial-gradient(circle, brown 20%, teal 50%, grey 70%);
     display: flex;
     flex-direction: row;
-    /* width: 50%; */
+    width: 50%;
     /* flex-wrap: wrap-reverse; */
    justify-content: center;
    gap: 24px;
