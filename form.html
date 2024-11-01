@@ -4,53 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form</title>
-    <link rel="stylesheet" href="style.css">
-   
+    <link rel="stylesheet" href="form.css">
 </head>
 <body>
+    <h1>facebook</h1>
     <div class="container">
         <h2>Create a new account</h2>
-        <p>It's quick and easy</p>
+        <p class="quick">It's quick and easy</p>
+        
         <form>
             <input type="text" placeholder="First name">
             <input type="text" placeholder="Surname">
 
-            <p>Date of birth ?</p>
-            <select>
-                <option></option>
+            <p class="question">Date of birth <span>?</span></p>
+            <select class="gender birth">
+                <option> 31</option>
             </select>
-            <select>
-                <option></option>
+            <select class="gender birth">
+                <option>Oct</option>
             </select>
-            <select>
-                <option></option>
+            <select class="gender birth">
+                <option>2024</option>
             </select>
 
-            <p>Gender ?</p>
-            <label for="female">Female</label>
-            <input type="radio" id="female" name="gender" value="female">
+            <p class="question">Gender <span>?</span></p>
+            <div class="gender">
+                <label for="female">Female</label>
+                <input type="radio" id="female" name="gender" value="female">
+            </div>
+            
+            <div class="gender">
+                <label for="male">Male</label>
+                <input type="radio" id="male" name="gender" value="male">
+             </div>
 
-            <label for="male">Male</label>
-            <input type="radio" id="male" name="gender" value="male">
+            <div class="gender">
+                <label for="custom">Custom</label>
+                <input type="radio" id="custom" name="gender" value="custom">
+            </div>
 
-            <label for="custom">Custom</label>
-            <input type="radio" id="custom" name="gender" value="custom">
-           <br><br>
+            <input type="email" placeholder="Mobile number or email address">
+            <input type="password" placeholder="New password">
 
-            <input type="text" placeholder="Mobile number or email address"><br><br>
-            <input type="text" placeholder="New password">
-
-            <p>People who use our service may have uploaded your contact information to Facebook. Learn more.</p>
-
-            <p>By clicking Sign Up, you agree to our Terms, Privacy Policy and Cookies Policy. You may receive SMS notifications from us and can opt out at any time.</p>
-
-              <button>Sign up</button>
         </form>
+        <div class="info">
+            <p>People who use our service may have uploaded your contact information to Facebook. <a href="">Learn more</a>.</p>
 
-       <br>
-            <a href="facebook.com">Already have an account?</a>
-        
-       
+            <p>By clicking Sign Up, you agree to our <a href="">Terms</a>, <a href="">Privacy Policy</a> and <a href="">Cookies Policy</a>. You may receive SMS notifications from us and can opt out at any time.</p>
+            
+        </div>
+        <button class="sign-up">Sign up</button>
+        <br>
+             <a href="facebook.com" class="sign-in">Already have an account?</a>
     </div>
    
 
