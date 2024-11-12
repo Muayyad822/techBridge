@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+//To encode 
+
+function reverseWord(word) {
+    const alphabet = 'abcdefghijklmnopqrstuvwxyz';
+    let wordOutput = '';
+
+    for (const element of word) {
+       if (alphabet.includes(element)) {
+         wordOutput = element + wordOutput;
+       } else {
+         wordOutput += element;
+       }
+    }
+    return wordOutput;
+}
+
+console.log(reverseWord("how are you"));
+
+
+//To decode
+
+function decodeWord(encodedWord) {
+    const alphabet = 'abcdefghijklmnopqrstuvwxyz';
+    let decodedOutput = '';
+    let alphabetChars = [];
+
+    for (const element of encodedWord) {
+        if (alphabet.includes(element.toLowerCase())) {
+            alphabetChars.unshift(element);
+        }
+    }
+
+    for (const element of encodedWord) {
+        if (alphabet.includes(element.toLowerCase())) {
+            decodedOutput += alphabetChars.shift(); 
+        } else {
+            decodedOutput += element; 
+        }
+    }
+
+    return decodedOutput;
+}
+
+console.log(decodeWord("uoy era woh"));
+    </script>
+</body>
+</html>
