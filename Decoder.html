@@ -35,13 +35,13 @@ function decodeWord(encodedWord) {
     let alphabetChars = [];
 
     for (const element of encodedWord) {
-        if (alphabet.includes(element.toLowerCase())) {
+        if (alphabet.includes(element)) {
             alphabetChars.unshift(element);
         }
     }
 
     for (const element of encodedWord) {
-        if (alphabet.includes(element.toLowerCase())) {
+        if (alphabet.includes(element)) {
             decodedOutput += alphabetChars.shift(); 
         } else {
             decodedOutput += element; 
@@ -51,7 +51,7 @@ function decodeWord(encodedWord) {
     return decodedOutput;
 }
 
-console.log(decodeWord("uoy era woh"));
+console.log(decodeWord("uoy era ohw"));
     </script>
 </body>
 </html>
