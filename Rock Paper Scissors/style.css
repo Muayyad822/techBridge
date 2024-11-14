@@ -1,0 +1,27 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    background-color: gray;
+    color: black;
+    margin: 50px;
+}
+.main-container{
+    border: 2px solid black;
+    width: 40%;
+    height: auto;
+    margin: 0px auto;
+}
+
+button{
+  padding: 10px 20px;
+  margin-bottom: 20px;
+}
+#result{
+    display: inline-block;
+    width: 35%;
+    font-size: 25px;
+}
+img{
+    width: 100px;
+   
+}
