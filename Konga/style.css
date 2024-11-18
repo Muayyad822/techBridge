@@ -298,14 +298,18 @@ body{
 
 .all-contact-container{
     background-color: #333232;
+    padding: 5px 20px;
     display: flex;
+    justify-content: space-around;
 }
 .contact-container{
-   width: fit-content;
-    padding: 5px 50px;
+    width: fit-content;
     color: #b5b5b5;
     display: flex;
     align-items: center;
+}
+.contact-text p:hover{
+    color: white;
 }
 .fa-envelope{
     color: black;
@@ -315,12 +319,19 @@ body{
     height: fit-content;
     margin: 15px;
 }
-.foot-form input{
+.foot-form{
+    display: flex;
     align-items: center;
-    padding: 10px;
-    border: none;
-    border-radius: 5px 0 0 5px;
-    margin: 0;
+    
+}
+.foot-form input{
+    padding: 10px 15px;
+    height: 18px;
+}
+.foot-form p{
+    background-color: #ed017f;
+    padding: 10px 15px;
+    height: 21px;
 }
 
 .links-container p{

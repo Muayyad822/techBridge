@@ -42,7 +42,7 @@
             <div class="cart">
                 <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
                 <a href="">My Cart</a>
-                <p class="cart-count">0</p>
+                <p class="cart-count" id="cartCount">0</p>
             </div>
         </header>
         <header class="header2">
@@ -93,7 +93,7 @@
                 <!-- <img src="/Konga/Konga assets/Group 1.png" alt=""> -->
                </div>
                <div class="add">
-                <a href="">Add To Cart</a>
+                <button id="addToCart" onclick="cartCount++">Add To Cart</button>
                </div>
             </a>
             
@@ -790,7 +790,8 @@
             </div>
 
             <form class="foot-form">
-                <input type="text">
+                <input type="email" placeholder="Email Address">
+                <p>Subscribe</p>
             </form>
         </div>
             
@@ -799,5 +800,7 @@
                 <p> Copyright &copy; 2024 Konga.com. All rights reserved</p>
             </div>
     </footer>
+
+    <script src="index.js"></script>
 </body>
 </html>

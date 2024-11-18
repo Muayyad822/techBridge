@@ -21,4 +21,5 @@ function play(yourChoice) {
     document.getElementById("yourChoice").textContent = `You picked: ${yourChoice}`; 
     document.getElementById("computerChoice").textContent =  `Computer picked: ${computerChoice}`; 
     document.getElementById("result").textContent =  result;
+
 }
