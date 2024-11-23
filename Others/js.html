@@ -1,49 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    <script>
-        // console.log(`Hello world has ` + `hello world`.length + ` characters`);
-        // x;
-        // console.log(typeof x)
-        
-        // password = `kachi`
-        // if (password == `kachi`){
-        //     console.log(`Welcome`)
-        // }
-        // else console.log(`Try again`)
+    <style>
+        #body .card{
+            width: 300px;
+            border: 1px solid black;
+            text-align: center;
+            padding: 10px;
+            margin: 10px auto;
+            background-color: brown;
+            color: white;
 
-        //objects
-        // car = {
-        //     name: "benz",
-        //     color: "white",
-        //     owner: "muayyad"
-        // }
-        // console.log(car.name);
-
-        //Arrays
-
-        // function Name(name,age,state){
-        //     console.log("My name is " + name);
-        //     console.log("I am " + age + " years old");
-        //     console.log("I am from " + state + " state");
-            
-        // }
-
-        // Name(Muiz, 20, Oyo)
-
-        function Multiply(x) {
-        for (let i = 1; i <= 10; i++) { 
-            console.log(x + " x " + i + " = " + x * i);
         }
-            }
+        img{
+            width: 100px;
+        }
+    </style>
+  </head>
+  <body>
+    <div id="body">
+        
+    </div>
 
-    Multiply(2);
 
+
+
+    <script>
+          // console.log(`Hello world has ` + `hello world`.length + ` characters`);
+          // x;
+          // console.log(typeof x)
+
+          // password = `kachi`
+          // if (password == `kachi`){
+          //     console.log(`Welcome`)
+          // }
+          // else console.log(`Try again`)
+
+          //objects
+          // car = {
+          //     name: "benz",
+          //     color: "white",
+          //     owner: "muayyad"
+          // }
+          // console.log(car.name);
+
+          //Arrays
+
+          // function Name(name,age,state){
+          //     console.log("My name is " + name);
+          //     console.log("I am " + age + " years old");
+          //     console.log("I am from " + state + " state");
+
+          // }
+
+          // Name(Muiz, 20, Oyo)
+
+      //     function Multiply(x) {
+      //     for (let i = 1; i <= 10; i++) {
+      //         console.log(x + " x " + i + " = " + x * i);
+      //     }
+      //         }
+
+      // Multiply(2);
+      // count = 0
+      // setInterval(() => {
+      //     count++
+      //     console.log(count);
+
+      // }, 1000);
+      // count = 0
+      // setTimeout(() => {
+      //     count++
+      //     console.log(count)
+      // }, 3000);
+
+
+
+      users = [ {name: "Ade", 
+                image: "https://www.shareicon.net/data/512x512/2016/07/26/802043_man_512x512.png",
+                work: "Designer"},
+                {name: "Olu",
+                image: "https://www.shareicon.net/data/512x512/2016/07/26/802043_man_512x512.png" ,
+                work: "Developer"},
+                {name: "Bola",
+                image: "https://www.shareicon.net/data/512x512/2016/07/26/802043_man_512x512.png",
+                work: "Doctor"},
+                {name: "Muiz",
+                image: "https://www.shareicon.net/data/512x512/2016/07/26/802043_man_512x512.png",
+                work: "Nurse"},
+                {name: "Chidi",
+                image: "https://www.shareicon.net/data/512x512/2016/07/26/802043_man_512x512.png",
+                work: "Chef"},
+                {name: "Ola",
+                image: "https://www.shareicon.net/data/512x512/2016/07/26/802043_man_512x512.png",
+                work: "Lawyer"},
+                {name: "Tunde",
+                image: "https://www.shareicon.net/data/512x512/2016/07/26/802043_man_512x512.png",
+                work: "Painter"},
+                {name: "Kola",
+                image: "https://www.shareicon.net/data/512x512/2016/07/26/802043_man_512x512.png" ,
+                work: "Teacher"},
+                {name: "Abdul",
+                image: "https://www.shareicon.net/data/512x512/2016/07/26/802043_man_512x512.png",
+                work: "Farmer"},
+                {name: "Sola",
+                image: "https://www.shareicon.net/data/512x512/2016/07/26/802043_man_512x512.png",
+                work: "Clerk"},
+                {name: "Muayyad",
+                image: "https://www.shareicon.net/data/512x512/2016/07/26/802043_man_512x512.png",
+                work: "Teacher"}
+
+      ]
+
+      let body = document.getElementById("body")
+
+      users.forEach(person => {
+        let card = document.createElement("div")
+        card.classList.add("card")
+        body.appendChild(card)
+
+        let image = document.createElement("img")
+        image.src=person.image
+        card.appendChild(image)
+
+        let name = document.createElement("h2")
+        name.textContent= person.name
+        card.appendChild(name)
+
+        let work = document.createElement("p")
+        work.textContent= person.work
+        card.appendChild(work)
+      }
+      )
     </script>
-</body>
+  </body>
 </html>

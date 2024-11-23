@@ -41,13 +41,22 @@
 
             <div class="cart">
                 <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
-                <a href="">My Cart</a>
+                <a href="" class="cart-link">My Cart</a>
                 <p class="cart-count" id="cartCount">0</p>
             </div>
         </header>
         <header class="header2">
-            <a href="" class="all">All Categories <i class="fas fa-bars"></i>
-            </a>
+            <div class="dropdown">
+                <a href="" class="all dropbtn">All Categories <i class="fas fa-bars"></i>
+                </a>
+                <div class="dropdown-content">
+                    <a href="">Computers and Accessories</a>
+                    <a href="">Phones and Tablets</a>
+                    <a href="">Electronics</a>
+                    <a href="">Konga Fashion</a>
+                </div>
+            </div>
+            
             <a href="">Computers and Accessories</a>
             <a href="">Phones and Tablets</a>
             <a href="">Electronics</a>
@@ -93,7 +102,7 @@
                 <!-- <img src="/Konga/Konga assets/Group 1.png" alt=""> -->
                </div>
                <div class="add">
-                <button id="addToCart" onclick="cartCount++">Add To Cart</button>
+                <a href="" id="addToCart" onclick="cartCount++">Add To Cart</a>
                </div>
             </a>
             
