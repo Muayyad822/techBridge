@@ -7,9 +7,10 @@ body{
 }
 .main-container{
     border: 2px solid black;
-    width: 40%;
+    width: 50%;
     height: auto;
     margin: 0px auto;
+    padding: 10px;
 }
 
 button{
@@ -17,11 +18,26 @@ button{
   margin-bottom: 20px;
 }
 #result{
-    display: inline-block;
-    width: 35%;
+    display: block;
+    margin: 0 auto;
     font-size: 25px;
 }
 img{
     width: 100px;
    
 }
+
+
+@media screen and (max-width: 750px) {
+    img{
+        width: 50px;
+    }
+
+    #result{
+        font-size: 15px;
+    }
+    h1{
+        font-size: 25px;
+    }
+}
+

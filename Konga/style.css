@@ -355,10 +355,6 @@ body{
 }
 
 
-.dropdown{
-    display: inline-flex;
-}
-
 
 @media screen and (max-width:900px) {
     .strip, .service-list, .all-header{
