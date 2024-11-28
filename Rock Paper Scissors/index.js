@@ -28,10 +28,11 @@ function play(playerChoice) {
     if (playerScore === 5 || computerScore === 5) {
         let finalResult = playerScore === 5 ? "Congratulations, you won the game!" : "Computer won the game!";
         document.getElementById("finalResult").textContent = finalResult;
-
+        location.reload
       
         playerScore = 0;
         computerScore = 0;
     }
+
 }
 

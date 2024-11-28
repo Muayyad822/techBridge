@@ -1,0 +1,34 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    background-color: beige;
+    background-image: url(cats.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:right;
+   
+}
+h1{
+    font-size: 40px;
+}
+button{
+    padding: 10px 15px;
+    display: block;
+    margin: 10px auto;
+    background-color: brown;
+    color: brown;
+    font-weight: 900;
+    background-image: url(cat.webp);
+    background-size: cover ;
+    background-color: rgba(0, 0, 0, 1);
+}
+
+#result{
+    color:crimson;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    width: 50%;
+    display: inline-block;
+    text-align: center;
+    padding: 10px;
+}
