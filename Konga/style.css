@@ -367,12 +367,25 @@ body{
     padding: 10px 15px;
     height: 21px;
 }
-
-.links-container p{
-    color: #b5b5b5;
-    text-align: center;
+.links-container{
+    display: flex;
+    justify-content: space-around;
     padding: 20px;
 }
+
+.links-container p, .links-container h4{
+    color: #b5b5b5;
+    
+}
+.links-container p:hover, .links-container h4:hover{
+    color: white;
+    cursor: pointer;
+}
+.copy{
+    color: #f0f2f5;
+    text-align: center;
+}
+
 
 
 
